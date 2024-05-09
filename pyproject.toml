@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "training-dbt"
+version = "0.1.0"
+description = ""
+authors = ["john doe <arjan.hulshoff@example.com>"]
+readme = "README.md"
+packages = [{include = "training_dbt"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dbt-postgres = "^1.7.13"
+dbt-core = "1.7.13"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.7.1"
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_orders
+    description: "Order data"
+    columns:
+      - name: order_sk
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null

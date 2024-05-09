@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: amazon
+    database: dwh  
+    schema: amazon  
+    tables:
+      - name: sale_report
